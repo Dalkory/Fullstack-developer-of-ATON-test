@@ -1,0 +1,16 @@
+﻿@model dynamic
+
+@{
+    ViewData["Title"] = "Login";
+}
+
+<script>
+    // Функция для перехода на страницу входа при загрузке страницы
+    function redirectToLogin() {
+        window.location.href = "@Url.Action("Login", "Auth")";
+    }
+</script>
+
+<script>
+    redirectToLogin();
+</script>

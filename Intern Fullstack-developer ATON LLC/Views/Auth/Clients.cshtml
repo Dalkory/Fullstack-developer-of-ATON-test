@@ -1,0 +1,48 @@
+﻿@model IEnumerable<Intern_Fullstack_developer_ATON_LLC_Domain.Entities.Client>
+@{
+    ViewData["Title"] = "Клиенты";
+}
+
+<h1>Клиенты</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Номер счета</th>
+            <th>Фамилия</th>
+            <th>Имя</th>
+            <th>Отчество</th>
+            <th>Дата рождения</th>
+            <th>ИНН</th>
+            <th>Ответственный</th>
+            <th>Статус</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var client in Model)
+        {
+            <tr>
+                <td>@client.AccountNumber</td>
+                <td>@client.LastName</td>
+                <td>@client.FirstName</td>
+                <td>@client.MiddleName</td>
+                <td>@client.BirthDate.ToShortDateString()</td>
+                <td>@client.TIN</td>
+                <td>@client.ResponsiblePerson.FullName</td>
+                <td>@client.Status</td>
+                <td>
+                    <form asp-controller="Auth" asp-action="ChangeStatus" method="post">
+                        <input type="hidden" name="clientId" value="@client.Id" />
+                        <select name="status">
+                            <option value="В работе">В работе</option>
+                            <option value="Отказ">Отказ</option>
+                            <option value="Сделка закрыта">Сделка закрыта</option>
+                        </select>
+                        <button type="submit">Изменить статус</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

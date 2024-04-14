@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34701.34
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Intern Fullstack-developer ATON LLC", "Intern Fullstack-developer ATON LLC\Intern Fullstack-developer ATON LLC.csproj", "{CDFCDC9A-A03B-4B40-B4E2-CA75841CEE36}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Intern Fullstack-developer ATON LLC Domain", "Intern Fullstack-developer ATON LLC Domain\Intern Fullstack-developer ATON LLC Domain.csproj", "{27DAE916-D9CC-4160-BA03-EE3D80AD6816}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CDFCDC9A-A03B-4B40-B4E2-CA75841CEE36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDFCDC9A-A03B-4B40-B4E2-CA75841CEE36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDFCDC9A-A03B-4B40-B4E2-CA75841CEE36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDFCDC9A-A03B-4B40-B4E2-CA75841CEE36}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27DAE916-D9CC-4160-BA03-EE3D80AD6816}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27DAE916-D9CC-4160-BA03-EE3D80AD6816}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27DAE916-D9CC-4160-BA03-EE3D80AD6816}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27DAE916-D9CC-4160-BA03-EE3D80AD6816}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0C155001-61C5-482D-B62A-2E164BB0394F}
+	EndGlobalSection
+EndGlobal
